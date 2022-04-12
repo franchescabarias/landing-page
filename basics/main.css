@@ -1,0 +1,168 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8em;
+    margin: 30px 0 0 0;
+    margin-left: 0.5em;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin-left: 1.4em;
+    margin-bottom: 0;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    color: #fff;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+     color: #fff;
+     padding-top: 10px;
+     padding-left: 2em;
+     cursor: pointer;
+     transition: all 200ms ease-in-out;
+}
+
+.logo:hover {
+    opacity: 90%;
+
+}
+
+
+.subscribe {
+    padding-right: 4em;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.subscribe:hover {
+    opacity: 60%;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.log-in {
+    padding-right: 30px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.log-in:hover {
+    opacity: 60%;
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin-left: 4em;
+    line-height: 1.5;
+}
+
+.images {
+    display: block;
+    text-align: center;
+    margin-top: 5em;
+    opacity: 90%;
+}
+.first-image {
+    width: 350px;
+    border-radius: 4px;
+    height:500px;
+    transition: all 200ms ease-in-out;
+}
+
+.first-image:hover {
+    opacity: 90%;
+    transform: scale(1.15);
+}
+
+.second-image {
+    width: 350px;
+    border-radius: 4px;
+    height:500px;
+    transition: all 200ms ease-in-out;
+}
+
+.second-image:hover {
+    opacity: 90%;
+    transform: scale(1.15);
+}
+
+.third-image {
+    width: 350px;
+    border-radius: 4px;
+    height:500px;
+    transition: all 200ms ease-in-out;
+}
+
+.third-image:hover {
+    opacity: 90%;
+    transform: scale(1.15);
+}
+
+.fourth-image {
+    width: 350px;
+    border-radius: 4px;
+    height:500px;
+    transition: all 200ms ease-in-out;
+}
+
+.fourth-image:hover {
+    opacity: 90%;
+    transform: scale(1.15);
+}
+
+#watercolor,
+#landscapes,
+#oil,
+#acrylic {
+    text-decoration: underline;
+    font-style: italic;
+    color: #101010;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 30px;
+    background-color: #101010;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 0.2);
+    ;
+    color: #fff;
+    padding: 10px 30px 10px 30px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 90%;
+}
+
+footer {
+    margin: 2em;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#name {
+    font-weight: bold;
+} 
