@@ -20,7 +20,7 @@ input {
     width: 600px;
     margin-left: 3em;
     height: 40px;
-    background-color: rgb(173,177,182, 0.3);
+    background-color: rgb(242,247,253, 0.3);
     border-radius: 3px;
     border-color: transparent;
     font-size: 20px;
@@ -34,8 +34,8 @@ input {
     margin-top: 11em;
     height: 650px;
     max-width: 900px;
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(237,218,213, 0.2);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 12px;
 }
 
@@ -74,10 +74,12 @@ input {
 .info {
     display: flex;
     justify-content: space-around;
-    margin-left: 3em;
+    margin-left: 3.5em;
     margin-top: 1em;
     font-family: 'Josefin Sans';
-    width: 800px;
+    width: 780px;
+    border-radius: 10px;
+
 }
 
 .first-container {
@@ -149,7 +151,7 @@ input {
 }
 
 .degrees {
-    color:#f1a38e;
+    color:#000000;
     font-weight: bold;
     font-size: 20px;
     position: relative;
@@ -159,6 +161,12 @@ img {
     margin: 0;
     width: 50px;
     height: 50px;
+}
+
+#partly-cloudy {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
