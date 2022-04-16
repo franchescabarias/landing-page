@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Square+Peg&display=swap');
+
+$font-heading: "Playfair Display";
+$font-text: "Square Peg";
+
+body {
+
+}
+.wrapper {
+    background: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-sub {
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+}
+.nav-link {
+    color: #fff !important;
+    padding: 2em !important;
+    font-family: 'Square Peg';
+    font-size: 22px;
+}
+
+.nav-link:hover {
+    opacity: 80% !important;
+}
+
+.navbar-nav {
+    float: right !important;
+    margin: 0 auto;
+}
+
+span.navbar-toggler-icon {
+    color: #fff !important;
+}/* } CHANGE TOGGLE COLOUR */
+
+section.home-page {
+    height: 700px;
+    color: #fff;
+}
