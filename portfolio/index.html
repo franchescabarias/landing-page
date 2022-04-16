@@ -17,9 +17,9 @@
   <body>
     <div class="wrapper">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container nav-sub">
-            <a class="navbar-brand" href="#">F/B</F></a>
+            <a class="navbar-brand" href="#">F<span id="flower-icon">✢</span>B</F></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -34,11 +34,11 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#"
-                  >◇ Home</a
+                  > Home</a
                 >
-                <a class="nav-link" href="#">▹ About</a>
-                <a class="nav-link" href="#">◇ Projects </a>
-                <a class="nav-link" href="#">□ Contacts </a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#"> Projects </a>
+                <a class="nav-link" href="#">Contacts </a>
               </div>
             </div>
           </div>
@@ -46,11 +46,29 @@
       </div>
       <section class="home-page container">
         <div class="row">
-          <div class="col-6">Hello</div>
-          <div class="col-6">World</div>
+          <div class="col-6">
+            <h1><span class="auto-input"></span></h1>
+            <p id="arrow">↓</p>
+          </div>
+          <div class="col-6 d-flex align-items-end">
+            <p id="info" >
+              <br>
+              I build responsive webpages and applications
+              <br>
+              Based in Exeter, United Kingdom
+            </p>
+          </div>
         </div>
       </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>var typed = new Typed(".auto-input",{
+       strings: ["FRONT", "END", "DEVELOPER"],
+       typeSpeed: 100,
+       backSpeed: 100,
+       loop: true
+    });
+      </script>
     <script src="src/app.js"></script>
   </body>
 </html>
