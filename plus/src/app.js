@@ -26,3 +26,12 @@ function formatDate() {
 }
 let currentDay = document.querySelector('#day');
 currentDay.innerHTML = `${formatDate()}`;
+
+
+let currentCity = document.querySelector('#search-form');
+currentCity.addEventListener('submit', function searchCity(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector('#search-input');
+  const city = document.querySelector('h1');
+  city.innerHTML = searchInput.value;
+});
