@@ -4,17 +4,28 @@
 body {
     background-image: url(/images/background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-h1 {
+#city {
     display: block;
     padding-top: 1em;
     font-size: 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    color: #000000;
+    color: #5a8e9c;;
 }
+
+#main-temp {
+    padding-top: 0.5em;
+    display: block;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 50px;
+    color: #5a8e9c;
+}
+
 
 input {
     width: 600px;
@@ -31,8 +42,8 @@ input {
 .container {
     display: block;
     margin: 0 auto;
-    margin-top: 11em;
-    height: 650px;
+    margin-top: 8em;
+    height: 680px;
     max-width: 900px;
     background-color: rgb(237,218,213, 0.2);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -65,6 +76,7 @@ input {
     font-weight: bold;
     transition: all 200ms ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
 }
 
 .search-button:hover {
@@ -74,7 +86,7 @@ input {
 .info {
     display: flex;
     justify-content: space-around;
-    margin-left: 3.5em;
+    margin-left: 4.5em;
     margin-top: 1em;
     font-family: 'Josefin Sans';
     width: 780px;
@@ -87,22 +99,34 @@ input {
     justify-content: space-evenly;
     width: 380px;
     height: 130px;
-   
     border-radius: 3px;
     
 }
 
+
+
 .second-container {
     display: flex;
     justify-content: space-around;
-    width: 380px;
-    
-  
+    width: 350px;
+}
+
+.current-degrees {
+    display: flex; 
+    justify-content: space-between;
+    font-size: 70px;
+    margin-top: 0.5em;
+    color: #5a8e9c;
+}
+
+.cel-fah {
+    font-family: 'Josefin Sans';
+    font-size: 18px;
 }
 
 #today {
-    font-size: 35px;
-    color: #000000;
+    font-size: 30px;
+    color: #5a8e9c;
     font-weight: bolder;
     margin: 0 auto;
     display: block;
@@ -135,7 +159,7 @@ input {
 
 .other-info {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 18px;
     color: #757575;
 }
 
@@ -151,7 +175,7 @@ input {
 }
 
 .degrees {
-    color:#000000;
+    color: #555555;
     font-weight: bold;
     font-size: 20px;
     position: relative;
@@ -159,8 +183,8 @@ input {
 
 img {
     margin: 0;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 #partly-cloudy {
