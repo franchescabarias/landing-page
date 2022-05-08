@@ -1,10 +1,3 @@
-/* 
-🙀 Bonus Feature
-Display a fake temperature (i.e 17) in Celsius and add a link to convert it to 
-Fahrenheit. When clicking on it, it should convert the temperature to Fahrenheit. 
-When clicking on Celsius, it should convert it back to Celsius.*/
-
-
 function currentTime() {
   let currentTime = new Date();
   const minutes = String(currentTime.getMinutes()).padStart(2, '0');
@@ -53,4 +46,13 @@ fahrenheit.addEventListener('click', function convertToFahrenheit(e) {
   let temperature = temperatureElement.innerHTML;
   temperature = Number(temperature);
   temperatureElement.innerHTML = Math.round((temperature * 9 / 5 + 32));
+});
+
+let celcius = document.querySelector('#celcius');
+celcius.addEventListener('click', function convertToCelcius(e) {
+  e.preventDefault();
+  let temperatureElement = document.querySelector('#temperature');
+  let temperature = temperatureElement.innerHTML;
+  temperature = Number(temperature);
+  temperatureElement.innerHTML = Math.round((temperature - 32) * 5 / 9);
 });
