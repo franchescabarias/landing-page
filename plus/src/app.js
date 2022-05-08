@@ -7,7 +7,7 @@ When clicking on Celsius, it should convert it back to Celsius.*/
 
 function currentTime() {
   let currentTime = new Date();
-  let minutes = String(currentTime.getMinutes()).padStart(2, '0');
+  const minutes = String(currentTime.getMinutes()).padStart(2, '0');
   let fulltime = currentTime.getHours() + ':' + minutes;
 
   return fulltime;
@@ -32,13 +32,25 @@ function formatDate() {
 
   return day;
 }
+
 let currentDay = document.querySelector('#day');
+currentDay.style.fontColor = '#EAD1CC';
 currentDay.innerHTML = `${formatDate()}`;
 
 let currentCity = document.querySelector('#search-form');
 currentCity.addEventListener('submit', function searchCity(e) {
   e.preventDefault();
   let searchInput = document.querySelector('#search-input');
-  const city = document.querySelector('#city');
+  let city = document.querySelector('#city');
   city.innerHTML = searchInput.value;
+});
+
+
+let fahrenheit = document.querySelector('#fahrenheit');
+fahrenheit.addEventListener('click', function convertToFahrenheit(e) {
+  e.preventDefault();
+  let temperatureElement = document.querySelector('#temperature');
+  let temperature = temperatureElement.innerHTML;
+  temperature = Number(temperature);
+  temperatureElement.innerHTML = Math.round((temperature * 9 / 5 + 32));
 });
