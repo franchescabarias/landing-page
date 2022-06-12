@@ -33,11 +33,16 @@ currentDay.innerHTML = `${formatDate()}`;
 let currentCity = document.querySelector('#search-form');
 currentCity.addEventListener('submit', function searchCity(e) {
   e.preventDefault();
-  let searchInput = document.querySelector('#search-input');
-  let city = document.querySelector('#city');
-  city.innerHTML = searchInput.value;
+  const apiKey = "d9a1ffbb13c0cf12ce582064cf96a4eb";
+  let city = document.querySelector('#search-input').value;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+  axios.get(apiUrl).then(showTemperature);
 });
 
+function showTemperature(response) {
+  document.querySelector('#city').innerHTML = response.data.name;
+  document.querySelector('#temperature').innerHTML = Math.round(response.data.main.temp);
+};
 
 let fahrenheit = document.querySelector('#fahrenheit');
 fahrenheit.addEventListener('click', function convertToFahrenheit(e) {
