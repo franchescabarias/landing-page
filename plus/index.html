@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/main.css" />
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <h1>New York
-        <span class="numbers"><span id="twelve">12℃</span></span>
+      <h1><span id="city">New York</span>         
       </h1>
       <div class="search-container">
-        <form action="#" class="search-form">
+        <form  id="search-form">
           <label for="search"></label>
-          <input type="text" id="search" placeholder="Enter a city..." />
+          <input type="text" id="search-input" placeholder="Enter a city..." />
+          <input type="submit" class="search-button" value="Search">
+        
         </form>
-        <button class="search-button">Search</button>
       </div>
       <section class="info">
         <div class="first-container">
@@ -26,14 +26,13 @@
             <span id="sunrise"
               >Sunrise:
               <br />
-
               <span class="numbers">06:25</span>
               <br />
             </span>
           </p>
-          <p>
+          <p class="date-and-time">
             <span id="today"
-              > Today <span id="time-now">16:00</span>
+              > <span id="day">Thursday</span> <span id="time-now">16:00</span>
               <br />
             <img src="images/partly-cloudy-day.svg" alt="partly-cloudy" id="partly-cloudy">
             </span>
@@ -47,53 +46,45 @@
           </p>
         </div>
         <div class="second-container">
-          <div class="date">
-            <p>
-              <span id="current-day">
-              <span id="day">Thursday</span>
-              <br />
-              Cloudy
-              </span>
-              <br>
-            </p>
+          <div class="current-degrees">
+            <span id="temperature">19</span>
+            <div class="cel-fah"><a href="#" id="celcius">℃</a> | <a href="#" id="fahrenheit">F</a></div>
           </div>
           <div class="other-info">
-            <p>Precipitation: <span class="numbers">65%</span></p>
-            <p>Humidity: <span class="numbers">86%</span></p>
-            <p>Wind: <span class="numbers">6 mph</span</p>
+            <p id="other">Precipitation: <span class="numbers">65%</span></p>
+            <p id="other">Humidity: <span class="numbers">86%</span></p>
+            <p id="other">Wind: <span class="numbers">6 mph</span</p>
           </div>
         </div>
       </section>
       <section class="weather">
         <div class="one">
-          <p>Wed</p>
+          <p id="day">Wed</p>
           <img src="images/clear-day.svg" alt="sunny">
           <p><span class="degrees">18℃</span></p>
         </div>
         <div class="two">
-          <p>Thu</p>
+          <p id="day">Thu</p>
           <img src="images/clear-day.svg" alt="sunny">
           <p><span class="degrees">15℃ </span></p>
         </div>
         <div class="three">
-          <p>Fri</p>
+          <p id="day">Fri</p>
           <img src="images/partly-cloudy-day.svg" alt="sunny">
           <p><span class="degrees">10℃</span></p>
         </div>
         <div class="fourth">
-          <p>Sat</p>
+          <p id="day">Sat</p>
           <img src="images/partly-cloudy-day-drizzle.svg" alt="sunny">
           <p><span class="degrees">12℃</span></p>
         </div>
         <div class="fifth">
-          <p>Sun</p>
+          <p id="day">Sun</p>
           <img src="images/rain.svg" alt="sunny">
           <p><span class="degrees">13℃</span></p>
         </div>
       </section>
-      <footer>
-        This project was coded by <span id="name">Franchesca Barias</span> and is open-sourced on <a href=">https://github.com/chescab" id="github"> GitHub</a>
-      </footer>
+      
     </div>
     <script src="src/app.js"></script>
   </body>
