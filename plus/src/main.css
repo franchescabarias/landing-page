@@ -1,29 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 
 body {
-    background-image: url(/images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #c0b59b;
 }
 
 #city {
     display: block;
-    padding-top: 1em;
+    padding-top: 1.25em;
     font-size: 50px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Varela Round';
     font-weight: bolder;
-    color: #5a8e9c;;
+    color: #E3F5EF;
+    ;
 }
 
 #main-temp {
     padding-top: 0.5em;
     display: block;
     text-align: center;
-    font-family: 'Josefin Sans';
+    font-family: 'Varela Round';
     font-size: 50px;
-    color: #5a8e9c;
+    color: #fff;
 }
 
 
@@ -31,11 +30,12 @@ input {
     width: 600px;
     margin-left: 3em;
     height: 40px;
-    background-color: rgb(242,247,253, 0.3);
-    border-radius: 3px;
+    background-color: #E3F5EF;
+    color: #455654;
+    border-radius: 10px;
     border-color: transparent;
     font-size: 20px;
-    font-family: 'Josefin Sans';
+    font-family: 'Varela Round';
     box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
 
@@ -43,17 +43,17 @@ input {
     display: block;
     margin: 0 auto;
     margin-top: 8em;
-    height: 680px;
+    height: 690px;
     max-width: 900px;
-    background-color: rgb(237,218,213, 0.2);
+    background-image: linear-gradient(to top, #DECBA4, #3E5151);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    border-radius: 12px;
+    border-radius: 30px;
 }
 
 .search-container {
     display: inline;
     text-align: center;
-    
+
 }
 
 
@@ -65,14 +65,13 @@ input {
 .search-button {
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: #455654;
     height: 50px;
     width: 150px;
-    font-family: 'Josefin Sans';
+    font-family: 'Varela Round';
     margin-left: 1em;
-    border-radius: 3px;
-    border-color: transparent;
-    background-color: #f1a38e;
+    border-radius: 10px;
+    background-color: #E3F5EF;
     font-weight: bold;
     transition: all 200ms ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -80,7 +79,7 @@ input {
 }
 
 .search-button:hover {
-    opacity: 90%;
+    opacity: 80%;
 }
 
 .info {
@@ -88,7 +87,7 @@ input {
     justify-content: space-around;
     margin-left: 4.5em;
     margin-top: 1em;
-    font-family: 'Josefin Sans';
+    font-family: 'Varela Round';
     width: 780px;
     border-radius: 10px;
 
@@ -100,7 +99,7 @@ input {
     width: 380px;
     height: 130px;
     border-radius: 3px;
-    
+
 }
 
 
@@ -112,21 +111,33 @@ input {
 }
 
 .current-degrees {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     font-size: 70px;
     margin-top: 0.5em;
-    color: #5a8e9c;
+    color: #E3F5EF;
 }
 
 .cel-fah {
-    font-family: 'Josefin Sans';
     font-size: 18px;
+}
+
+#celcius,
+#fahrenheit {
+    text-decoration: none;
+    font-family: 'Varela Round';
+    color: #E3F5EF;
+    transition: 200ms all ease-in-out;
+}
+
+#celcius:hover,
+#fahrenheit:hover {
+    color: #979797;
 }
 
 #today {
     font-size: 30px;
-    color: #5a8e9c;
+    color: #E3F5EF;
     font-weight: bolder;
     margin: 0 auto;
     display: block;
@@ -139,17 +150,21 @@ input {
     margin: 0 auto;
     display: block;
     margin-top: 5em;
-    color: #757575;
+    color: #bab4b4;
 }
 
 
 #current-day {
     color: #000000;
 }
+
 .numbers {
-    color: #5a8e9c;
+    color: #E3F5EF;
 }
 
+#other {
+    color: #bab4b4;
+}
 .date {
     font-size: 25px;
     color: #757575;
@@ -169,16 +184,20 @@ input {
     padding: 2em;
     padding-top: 3em;
     text-align: center;
-    font-family: 'Josefin Sans';
+    font-family: 'Varela Round';
     font-weight: lighter;
     color: #757575;
 }
 
 .degrees {
-    color: #555555;
+    color: #E3F5EF;
     font-weight: bold;
     font-size: 20px;
     position: relative;
+}
+
+#day {
+    color: #bab4b4;
 }
 
 img {
@@ -193,19 +212,3 @@ img {
     margin: 0 auto;
 }
 
-footer {
-    display: block;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 1em;
-    color: #757575;
-}
-
-#name {
-    color:#5a8e9c;
-}
-
-#github {
-text-decoration: none;
-color: #5a8e9c;
-}
